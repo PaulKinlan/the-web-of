@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>The web of ...</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!--
+      This is the body of the page
+      Look at the elements and see how they appear in the rendered page on the right
+      Each element is defined using tags, with < and > indicating where each one opens and closes
+      There are elements for sections of the page, images, text, and more
+      The elements include attributes referenced in the CSS for the page style
+    -->
+
+    <!-- The wrapper and content divs set margins and positioning -->
+    <div class="wrapper">
+      <div class="content" role="main">
+        <!-- This is the start of content for our page -->
+        <h1 class="title">The Web Of ...</h1>
+
+        <input
+          type="date"
+          id="browsersBeforePicker"
+          for="browsersBeforePicker"
+        />
+
+        <fieldset id="versions">
+          <legend>
+            Browsers
+          </legend>
+          <div id="versionList"></div>
+        </fieldset>
+
+        <fieldset id="areas">
+          <legend>
+            Areas
+          </legend>
+          <label>API<input type="checkbox" value="api" name="areas"/></label>
+          <label>HTML<input type="checkbox" value="html" name="areas"/></label>
+          <label
+            >JS<input type="checkbox" value="javascript" name="areas"
+          /></label>
+          <label>CSS<input type="checkbox" value="css" name="areas"/></label>
+        </fieldset>
+
+        <!-- Instructions on using this project -->
+        <h3>
+          Feature Availability
+        </h3>
+        <div class="instructions">
+          <p>
+            What features are available to you when considering the selected
+            browsers from certain date.
+          </p>
+          <div>
+            There are
+            <span id="featureCount"></span> features that are available in all of the
+            selected browsers that were usable on the chosen date.
+          </div>
+
+          <ul id="features"></ul>
+        </div>
+      </div>
+    </div>
+    <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
+    <footer class="footer"></footer>
+  </body>
+</html>
